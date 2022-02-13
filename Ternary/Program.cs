@@ -18,6 +18,9 @@ namespace Ternary
             //{
             //    howToSpendTime = "Wok";
             //}
+
+            howToSpendTime = day.ToLower().Equals("saturday") || day.ToLower().Equals("sunday") ? "Relax" : "Work";
+
             Console.WriteLine($"{howToSpendTime} on {day}");
         }
     }
